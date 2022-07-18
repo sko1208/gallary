@@ -1,0 +1,109 @@
+.header {
+	background-color: $main-color;
+	.container {
+		display: flex;
+		height: 81px;
+		align-items: center;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+	}
+  	&__menu {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 1220px;
+    	list-style: none;
+		margin: 0;
+		@include fz18;
+		li {
+			position: relative;
+			a {
+				color: $white-color;
+				text-decoration: none;
+				&:before {
+					opacity: 0;
+					content: '';
+					position: absolute;
+					top: 25px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 5px;
+					height: 5px;
+					border-radius: 50px;
+					background-color: $white-color;
+					transition: all 1s;
+				}
+				&:hover:before {
+					opacity: 1;
+				}
+			}
+		}
+  	}
+	&__like {
+		width: 64px;
+		height: 47px;
+		border-right: 2px solid rgba(255, 255, 255, 0.3);
+		a {
+			@include icons;
+			background-color: $white-color;
+			&::before {
+				background: url('../icons/love.svg') no-repeat 50%/cover;
+			}
+			&:hover {
+				background-color: $hover-color;
+			}
+			&:hover:before {
+				background: url('../icons/love_hover.svg') no-repeat 50%/cover;
+			}
+		}
+	}
+	&__social-icons {
+		display: flex;
+		list-style: none;
+		margin: 0 0 0 9px;
+		li {
+			margin-left: 10px;
+			a {
+				@include icons;
+				background: rgba(255, 255, 255, 0.5);	
+			}
+		}
+		li:nth-child(1) a {
+			&::before {
+				background: url('../icons/facebook.svg') no-repeat 50%/cover;
+			}
+			&:hover {
+				background-color: #3B5998;
+			}
+			&:hover:before {
+				background: url('../icons/facebook_hover.svg') no-repeat 50%/cover;
+			}
+		}
+		li:nth-child(2) a {
+			&::before {
+				background: url('../icons/tiktok.svg') no-repeat 50%/cover;
+			}
+			&:hover {
+				background-color: #000000;
+			}
+		}
+		li:nth-child(3) a {
+			&::before {
+				background: url('../icons/inst.svg') no-repeat 50%/cover;
+			}
+			&:hover {
+				background-color: #C44993;
+			}
+		}
+		li:nth-child(4) a {
+			&::before {
+				background: url('../icons/youtube.svg') no-repeat 50%/cover;
+			}
+			&:hover {
+				background-color: #FF0000;
+			}
+		}
+	}  
+}

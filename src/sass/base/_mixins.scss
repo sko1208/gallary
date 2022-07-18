@@ -1,0 +1,22 @@
+@mixin fz18 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+}
+
+@mixin icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+    }
+}
