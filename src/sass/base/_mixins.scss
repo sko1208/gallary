@@ -6,6 +6,13 @@
     text-align: center;
 }
 
+@mixin fz26  {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+}
+
 @mixin icons {
     display: flex;
     align-items: center;

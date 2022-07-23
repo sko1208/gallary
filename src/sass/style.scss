@@ -1,6 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@400;700&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -8,14 +9,15 @@
     padding: 0;
 }
 
-
-
-@import 'base/variables';
-@import 'base/mixins';
-@import 'blocks/header';
-
 .container {
     width: 1805px;
     margin: 0 auto;
 }
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/header';
+@import 'blocks/banner';
+
+
 
