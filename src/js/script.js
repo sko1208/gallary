@@ -53,11 +53,14 @@ class addElements {
 
 new addElements('body', wrapperBlock).renderHeader();
 
+////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
+  var slider = tns ({
+    "autoWidth": true,
+    "loop": false,
+    "mouseDrag": true,
+    "container": "#autoWidth-non-loop",
+    "swipeAngle": false,
+    "speed": 400
+    });
 

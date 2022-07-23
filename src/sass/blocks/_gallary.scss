@@ -1,0 +1,12 @@
+.gallary {
+    &__head {
+        @include fz200;
+        color: $main-color;
+        margin-top: -200px;
+    }
+    &__slider {
+       padding-top: 51px;
+      
+    }
+   
+}
