@@ -11,7 +11,7 @@ const wrapperBlock = `
         <li><a href="#">Exhibitions</a></li>
         <li><a href="#">Bio</a></li>
         <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#" data-open>Contacts</a></li>
         <li><a href="#">Auction</a></li>
         <li><a href="#">NFT</a></li>
     </ul>
@@ -53,14 +53,43 @@ class addElements {
 
 new addElements('body', wrapperBlock).renderHeader();
 
-////////////////////////////////////////////////////////////////////
 
-  var slider = tns ({
-    "autoWidth": true,
-    "loop": false,
-    "mouseDrag": true,
-    "container": "#autoWidth-non-loop",
-    "swipeAngle": false,
-    "speed": 400
+// Modal window
+const openTrigger = document.querySelector('[data-open]'),
+      modalWindow = document.querySelector('.modal'),
+      closeTrigger = document.querySelector('[data-close]');
+
+    function closeElement(element) {
+        element.classList.toggle('show');
+        document.body.style.overflow = '';
+    }
+
+    function openElement(element) {
+        element.classList.toggle('show');
+        document.body.style.overflow = 'hidden';    
+    }
+    
+    openTrigger.addEventListener('click', () => {
+        openElement(modalWindow);
     });
+    
+    closeTrigger.addEventListener('click', (e) => {
+        closeElement(modalWindow);
+        
+    });
+    
+    modalWindow.addEventListener('click', (e) => {
+        if(e.target === modalWindow) {
+            closeElement(modalWindow);
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if(e.code === 'Escape' && modalWindow.classList.contains('show')) {
+            closeElement(modalWindow);
+            console.log('test');
+        }
+    });
+
+
+
 

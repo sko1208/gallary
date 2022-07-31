@@ -8,11 +8,14 @@
     margin: 0;
     padding: 0;
 }
-
+body  {
+    z-index: 1;
+}
 .container {
     width: 1805px;
     margin: 0 auto;
 }
+
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -22,4 +25,11 @@
 @import 'blocks/modal';
 
 
-
+.show {
+    opacity: 1;
+    transition: all 2s;
+    z-index: 2;
+}
+.hidden {
+    display: none;
+}

@@ -1,12 +1,12 @@
 .modal {
-   
     position: fixed;
     overflow: hidden;
     top: 0;
     width: 100%;
     height: 100%;
     background: rgba(27, 27, 27, 0.9);
-    z-index: 1050;
+    z-index: -1;
+    opacity: 0;
     &__area {
         position: relative;
         max-width: 1194px;
