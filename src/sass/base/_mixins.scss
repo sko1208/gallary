@@ -25,18 +25,79 @@
 
 @mixin icons {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-    }
-}
+		flex-direction: row;
+		list-style-type: none;
+
+		margin: 0;
+		li {
+			margin-left: 10px;
+		}
+		li:nth-child(1) {
+			position: relative;
+			margin-left: 0;
+			&:hover {
+				a {
+					background-color: #4137D0;
+				}
+			}
+			&::before {
+				content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -20px;
+                    transform: translateY(-50%); 
+                    width: 2px;
+                    height: 39px;
+                    background-color: rgba(255, 255, 255, 0.3);
+			}
+		}
+		li:nth-child(2) {
+			margin-left: 40px;
+			&:hover {
+				a {
+					background-color: #3B5998;
+				}
+			}
+		}
+		li:nth-child(3) {
+			&:hover {
+				a {
+					background-color: #000000;
+				}
+			}
+			
+		}
+		li:nth-child(4) {
+			&:hover {
+				a {
+					background-color: #C44993;
+				}
+			}
+			
+		}
+		li:nth-child(5) {
+			&:hover {
+				a {
+					background-color: #FF0000;
+				}
+			}
+		}
+		a {
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+			width: 46px;
+            height: 46px;
+			background-color: rgba(255, 255, 255, 0.5);
+			img {
+				width: 26px;
+				height: 26px;
+			}
+		}
+	}
+
 @mixin btn {
     width: 216px;
     height: 60px;
