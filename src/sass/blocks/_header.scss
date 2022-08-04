@@ -20,6 +20,9 @@
     	list-style: none;
 		margin: 0;
 		@include fz18;
+		li:nth-child(1) {
+			display: none;
+		}
 		li {
 			position: relative;
 			a {
