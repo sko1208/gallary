@@ -53,8 +53,12 @@
 	&__icons {
 		@include icons;
 	}
+	.burger__close {
+		display: none;
+	}  
 }
 
 .hamburger {
 	display: none;
-}  
+}
+

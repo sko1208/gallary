@@ -60,12 +60,18 @@ const openTrigger = document.querySelector('[data-open]'),
 
 
 // Burger Menu
-const bugrerMenuOpen = document.querySelector('.hamburger'),
-      burgerMenu = document.querySelector('.header__menu_wrapper'),
-      burgerCloseButton = document.querySelector('.header__menu_close');
 
-bugrerMenuOpen.addEventListener('click', () => {
-    burgerMenu.classList.toggle('header__menu_wrapper_active');
-    bugrerMenuOpen.classList.toggle('hamburger__active');
+
+window.addEventListener('DOMContentLoaded', () => {
+    const burgerMenuOpen = document.querySelector('.hamburger'),
+    burgerMenu = document.querySelector('.header__menu_wrapper'),
+    burgerCloseButton = document.querySelector('.header__menu_close'),
+    header = document.querySelector('header');
+
+header.addEventListener('click', (e) => {
+let target = e.target;
+  if (target && target.hasAttribute('data-triggerBurgerMenu')) {
+      burgerMenu.classList.toggle('header__menu_wrapper_active');
+  }
 });
-
+});
