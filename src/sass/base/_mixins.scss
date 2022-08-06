@@ -24,17 +24,14 @@
 }
 
 @mixin icons {
-    display: flex;
-		flex-direction: row;
+    	display: grid;
+		grid-template-columns: 76px repeat(4, 46px);
+		grid-column-gap: 10px;
 		list-style-type: none;
-
 		margin: 0;
-		li {
-			margin-left: 10px;
-		}
+		
 		li:nth-child(1) {
 			position: relative;
-			margin-left: 0;
 			&:hover {
 				a {
 					background-color: #4137D0;
@@ -52,7 +49,6 @@
 			}
 		}
 		li:nth-child(2) {
-			margin-left: 40px;
 			&:hover {
 				a {
 					background-color: #3B5998;

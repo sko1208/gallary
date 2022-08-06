@@ -10,14 +10,6 @@
             width: 100%;
             font-size: 14px;
         }
-        &__icons {
-            li:nth-child(2) {
-                margin-left: 20px;
-            }
-            li:nth-child(1)::before {
-                right: -10px;
-            }
-        }
     }
 }
 
@@ -92,20 +84,15 @@
             
         }
         &__icons {
-            li:nth-child(1)::before {
-                right: -20px;
-            }
-            li:nth-child(2) {
-                margin-left: 40px;
-            }
+            grid-template-columns: 76px repeat(3, 46px) 76px 46px;
             li:nth-child(5) {
                 position: relative;
-                margin-right: 40px;
+                // margin-right: 40px;
                 &::before {
                     content: '';
                         position: absolute;
                         top: 50%;
-                        right: -20px;
+                        left: 66px;
                         transform: translateY(-50%); 
                         width: 2px;
                         height: 39px;
@@ -113,11 +100,17 @@
                 }
             }
         }
-        &__burger_icons {
-            @include icons;
+        &__burger_icons_wrapper {
+            height: 100%;
             background-color: $white-color;
             width: 49%;
             min-height: 100%;
+        }
+        &__burger_icons {
+            @include icons;
+            flex-wrap: wrap;
+            background-color: $white-color;
+            width: 100%;
             padding: 20px 0 20px 20px;
             li {
                 margin-left: 20px;
@@ -181,6 +174,7 @@
             max-width: 556px;
         }
         &__icons {
+            grid-template-columns: 46px;
             li:not(:last-child) {
                 display: none;
             }
@@ -194,6 +188,21 @@
         padding: 0 20px 0 20px;
         .container {
             max-width: 100%;
+        }
+        &__burger_icons {
+            li {
+                margin-left: 15px;
+            }
+            li:nth-child(1) {
+                margin-left: 0;
+            }
+            li:nth-child(1):before {
+                display: none;
+            }
+            li:nth-child(2) {
+                margin-left: 15px;
+                margin-right: 80%;
+            }
         }
     }
 }
