@@ -75,3 +75,16 @@ let target = e.target;
   }
 });
 });
+
+// ///////// love icons
+// window.addEventListener('DOMContentLoaded', () => {
+//     const headerIcons = document.querySelector('.header__icons'),
+//           loveIcon = document.querySelector('.love_icon');
+
+//         headerIcons.addEventListener('click', () => {
+//             loveIcon.innerHTML = `<img slass ="love_icon" src="icons/love.svg" alt="love">`;
+//             console.log('test');
+//         });
+// });
+
+// console.log('loveIcon');

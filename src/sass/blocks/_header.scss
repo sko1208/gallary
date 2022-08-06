@@ -52,6 +52,28 @@
 	}
 	&__icons {
 		@include icons;
+		li:nth-child(1) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 46px;
+            height: 46px;
+			background-color: rgba(255, 255, 255, 0.5);
+			cursor: pointer;
+			&:hover {
+				background-color: $blue-color;
+			}
+			.love_icon {
+				width: 23px;
+				height: 23px;
+				background: url('../icons/love_hover.svg') center center/contain no-repeat;
+				&:hover {
+					background: url('../icons/love.svg') center center/contain no-repeat;
+				}
+			}
+			
+		}
 	}
 	.burger__close {
 		display: none;
