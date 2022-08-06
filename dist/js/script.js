@@ -60,31 +60,15 @@ const openTrigger = document.querySelector('[data-open]'),
 
 
 // Burger Menu
-
-
 window.addEventListener('DOMContentLoaded', () => {
     const burgerMenuOpen = document.querySelector('.hamburger'),
     burgerMenu = document.querySelector('.header__menu_wrapper'),
-    burgerCloseButton = document.querySelector('.header__menu_close'),
     header = document.querySelector('header');
 
-header.addEventListener('click', (e) => {
-let target = e.target;
-  if (target && target.hasAttribute('data-triggerBurgerMenu')) {
-      burgerMenu.classList.toggle('header__menu_wrapper_active');
-  }
+    header.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target && target.hasAttribute('data-triggerBurgerMenu')) {
+            burgerMenu.classList.toggle('header__menu_wrapper_active');
+        }
+    });
 });
-});
-
-// ///////// love icons
-// window.addEventListener('DOMContentLoaded', () => {
-//     const headerIcons = document.querySelector('.header__icons'),
-//           loveIcon = document.querySelector('.love_icon');
-
-//         headerIcons.addEventListener('click', () => {
-//             loveIcon.innerHTML = `<img slass ="love_icon" src="icons/love.svg" alt="love">`;
-//             console.log('test');
-//         });
-// });
-
-// console.log('loveIcon');
