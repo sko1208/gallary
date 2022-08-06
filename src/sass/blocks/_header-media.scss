@@ -108,18 +108,34 @@
         }
         &__burger_icons {
             @include icons;
-            flex-wrap: wrap;
             background-color: $white-color;
             width: 100%;
             padding: 20px 0 20px 20px;
-            li {
-                margin-left: 20px;
-            }
+            
             li:nth-child(1) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 position: relative;
-                margin-left: 0;
+                border-radius: 50%;
+                width: 46px;
+                height: 46px;
+                background-color: $main-color;
+                cursor: pointer;
+                &:hover {
+                    background-color: $blue-color;
+                }
                 &::before {
                     background-color: $white-grey-color;
+                    left: 64px;
+                }
+                .love_icon {
+                    width: 23px;
+                    height: 23px;
+                    background: url('../icons/love_hover.svg') center center/contain no-repeat;
+                    &:hover {
+                        background: url('../icons/love.svg') center center/contain no-repeat;
+                    }
                 }
             }
             a {
@@ -168,20 +184,6 @@
         }
     }
 }
-@media (max-width: 716px) {
-    .header {
-        .container {
-            max-width: 556px;
-        }
-        &__icons {
-            grid-template-columns: 46px;
-            li:not(:last-child) {
-                display: none;
-            }
-        }
-        
-    }
-}
 
 @media (max-width: 716px) {
     .header {
@@ -189,20 +191,41 @@
         .container {
             max-width: 100%;
         }
-        &__burger_icons {
+        &__menu {
+            width: 69%;
             li {
-                margin-left: 15px;
+                a {
+                    font-size: 14px;
+                }
             }
-            li:nth-child(1) {
-                margin-left: 0;
+            li:first-child {
+                font-size: 16px;
             }
+        }
+        &__icons {
+            grid-template-columns: 46px;
+            li:not(:last-child) {
+                display: none;
+            }
+        }
+        &__burger_icons_wrapper {
+            width: 69%;
+        }
+        &__burger_icons {
+            grid-template-columns:  repeat(5, 46px);
+            row-gap: 15px;
             li:nth-child(1):before {
                 display: none;
             }
             li:nth-child(2) {
-                margin-left: 15px;
-                margin-right: 80%;
+                grid-column-start: 2;
+                grid-column-end: 7;
             }
         }
+        .burger__close {
+            right: 33%;
+        } 
+        
     }
+   
 }
