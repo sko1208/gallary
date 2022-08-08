@@ -59,20 +59,19 @@
 			border-radius: 50%;
 			width: 46px;
             height: 46px;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: $white-color;
 			cursor: pointer;
 			&:hover {
 				background-color: $blue-color;
-			}
-			.love_icon {
-				width: 23px;
-				height: 23px;
-				background: url('../icons/love_hover.svg') center center/contain no-repeat;
-				&:hover {
-					background: url('../icons/love.svg') center center/contain no-repeat;
+				.love_icon {
+					background: url('../icons/love_hover.svg') center center/contain no-repeat;
 				}
 			}
-			
+			.love_icon {
+				width: 24px;
+				height: 24px;
+				background: url('../icons/love.svg') center center/contain no-repeat;
+			}
 		}
 	}
 	.burger__close {
