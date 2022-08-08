@@ -1,8 +1,5 @@
 @media (max-width: 1805px) {
     .header {
-        .container {
-            max-width: 1140px;
-        }
         &__menu_wrapper {
             width: 51%;
         }
@@ -16,10 +13,6 @@
 @media (max-width: 1200px) {
     .header {
         position: relative;
-        .container {
-            max-width: 960px;
-        }
-
         .burger__close {
             display: block;
             position: absolute;
@@ -177,20 +170,9 @@
         }
     }
 }
-@media (max-width: 768px) {
-    .header {
-        .container {
-            max-width: 716px;
-        }
-    }
-}
-
 @media (max-width: 716px) {
     .header {
         padding: 0 20px 0 20px;
-        .container {
-            max-width: 100%;
-        }
         &__menu {
             width: 69%;
             li {
@@ -225,7 +207,6 @@
         .burger__close {
             right: 33%;
         } 
-        
     }
    
 }
