@@ -72,3 +72,30 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// slider
+$(document).ready(function(){
+    $('.gallary__card-wrapper').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        
+        appendArrows: false,
+        swipeToSlide: true,
+        
+      
+      });
+  });
+
+
+
+
+
+
+
+
+  

@@ -40,8 +40,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
+    
 </head>
 <body>
     <header class="header">
@@ -128,50 +130,97 @@
             </div>
         </div>
     </section>
-    <!-- <section class="gallary">
+    <section class="gallary">
         <div class="container">
             <div class="gallary__head">Gallary</div>
         </div>
-        <div class="gallary__slider">
-            <div class="gallary__items" id="autoWidth-non-loop">
-                <div class="gallary__item">
-                    <img src="img/gallary/gallary_1.jpg" alt="pic1">
-                    <div class="gallary__item-head">Name of the painting</div>
-                    <div class="gallary__item-date">(10.06.2021)</div>
-                    <div class="gallary__item-price">330.00 USD</div>
-                    <div class="gallary__item-btn"></div>
+        <div class="gallary__slide-container">
+            <div class="gallary__slide-content">
+                <div class="gallary__card-wrapper">
+                    <div class="gallary__card card_1">
+                        <div class="gallary__image-content">
+                            <img src="img/slide/card_1.jpg" alt="slide1" class="gallary__card-img">
+                        </div>
+                        <div class="gallary__card-content">
+                            <div class="gallary__divider"></div>
+                            <h2>Name of the painting</h2>
+                            <p class="gallary__date">(12.05.2020)</p>
+                            <p class="gallary__price">330.00 USD</p>
+                            <div class="gallary__button"><p>Buy</p></div>
+                        </div>
+                    </div>
+                    <div class="gallary__card card_2">
+                        <div class="gallary__image-content">
+                            <img src="img/slide/card_2.jpg" alt="slide1" class="gallary__card-img">
+                        </div>
+                        <div class="gallary__card-content">
+                            <div class="gallary__divider"></div>
+                            <h2>Name of the painting</h2>
+                            <p class="gallary__date">(12.05.2020)</p>
+                            <p class="gallary__price">330.00 USD</p>
+                            <div class="gallary__button"><p>Buy</p></div>
+                        </div>
+                    </div>
+                    <div class="gallary__card card_3">
+                        <div class="gallary__image-content">
+                            <img src="img/slide/card_3.jpg" alt="slide1" class="gallary__card-img">
+                        </div>
+                        <div class="gallary__card-content">
+                            <div class="gallary__divider"></div>
+                            <h2>Name of the painting</h2>
+                            <p class="gallary__date">(12.05.2020)</p>
+                            <p class="gallary__price">330.00 USD</p>
+                            <div class="gallary__button"><p>Buy</p></div>
+                        </div>
+                    </div>
+                    <div class="gallary__card card_4">
+                        <div class="gallary__image-content">
+                                <img src="img/slide/card_4.jpg" alt="slide1" class="gallary__card-img">
+                        </div>
+                        <div class="gallary__card-content">
+                            <div class="gallary__divider"></div>
+                            <h2>Name of the painting</h2>
+                            <p class="gallary__date">(12.05.2020)</p>
+                            <p class="gallary__price">330.00 USD</p>
+                            <div class="gallary__button"><p>Buy</p></div>
+                        </div>
+                    </div>
+                    <div class="gallary__card card_5">
+                        <div class="gallary__image-content">
+                            <img src="img/slide/card_5.jpg" alt="slide1" class="gallary__card-img">
+                        </div>
+                        <div class="gallary__card-content">
+                            <div class="gallary__divider"></div>
+                            <h2>Name of the painting</h2>
+                            <p class="gallary__date">(12.05.2020)</p>
+                            <p class="gallary__price">330.00 USD</p>
+                            <div class="gallary__button"><p>Buy</p></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallary__item">
-                    <img src="img/gallary/gallary_2.jpg" alt="pic2">
-                    <div class="gallary__item-head">Name of the painting</div>
-                    <div class="gallary__item-date">(12.05.2020)</div>
-                    <div class="gallary__item-price">330.00 USD</div>
-                    <div class="gallary__item-btn"></div>
+                
+            </div>
+            <div class="container">
+                <div class="gallary__dots-wrapper"></div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="painting">
+        <div class="container">
+            <h2 class="painting__head">New painting</h2>
+            <div class="painting__card">
+                <div class="painting__card_image">
+                    <img src="img/painting.jpg" alt="painting">
                 </div>
-                <div class="gallary__item">
-                    <img src="img/gallary/gallary_3.jpg" alt="pic3">
-                    <div class="gallary__item-head">Name of the painting</div>
-                    <div class="gallary__item-date">(15.03.2020)</div>
-                    <div class="gallary__item-price">330.00 USD</div>
-                    <div class="gallary__item-btn"></div>
-                </div>
-                <div class="gallary__item">
-                    <img src="img/gallary/gallary_4.jpg" alt="pic4">
-                    <div class="gallary__item-head">Name of the painting</div>
-                    <div class="gallary__item-date">(12.05.2020)</div>
-                    <div class="gallary__item-price">330.00 USD</div>
-                    <div class="gallary__item-btn"></div>
-                </div>
-                <div class="gallary__item">
-                    <img src="img/gallary/gallary_5.jpg" alt="pic5">
-                    <div class="gallary__item-head">Name of the painting</div>
-                    <div class="gallary__item-date">(10.06.2021</div>
-                    <div class="gallary__item-price">330.00 USD</div>
-                    <div class="gallary__item-btn"></div>
+                <div class="painting__card_descr">
+                    <h3 class="painting__card_head">Name of the painting (15.03.2020)</h3>
+                    <div class="painting__card_price">330.00 USD</div>
+                    <div class="painting__card_button">Buy</div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="modal">
         <div class="modal__area">
             <div class="modal__head">If you would like to recive regular artistic news from Kate Kulish, pleace feel free to subscribe to the monthly newsletter</div>
@@ -185,6 +234,10 @@
             </form>
         </div>
     </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+</body>
     
 </html>

@@ -1,0 +1,64 @@
+.painting {
+    &__head {
+        @include fz200;
+        text-align: center;
+    }
+    &__card {
+        margin-top: 40px;
+        &_image {
+            width: 100%;
+            max-height: 1338px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &_descr {
+            text-align: center;
+        }
+        &_head {
+            margin-top: 73px;
+            margin-bottom: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: $grey-color;
+        }
+        &_price {
+            margin-top: 60px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 28px;
+            color: $grey-color;
+        }
+        &_button {
+            display: flex;
+            margin: 43px auto 0 auto;
+      
+            align-items: center;
+            justify-content: center;
+            width: 216px;
+            height: 70px;
+            background-color: $blue-color;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $white-color;
+            cursor: pointer;
+            &:hover {
+                background-color: $blue-color;
+                box-shadow: 0px 12px 35px rgba(44, 35, 172, 0.55);
+            }
+            &:active {
+                background-color: $active-color;
+            }
+        }
+
+    }
+}
