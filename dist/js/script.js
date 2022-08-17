@@ -80,12 +80,23 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
-        centerMode: false,
+        slidesToShow: 2,
         variableWidth: true,
         swipeToSlide: true,
         prevArrow: '<button type="button" class="slick-prev"><</button>',
-        nextArrow: '<button type="button" class="slick-next">></button>'
+        nextArrow: '<button type="button" class="slick-next">></button>',
+        // centerMode: true,
+        // focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    centerMode: true,
+                    focusOnSelect: true
+                  }
+                
+            }
+        ]
       
       });
   });
