@@ -83,16 +83,12 @@ $(document).ready(function(){
         slidesToShow: 1,
         centerMode: false,
         variableWidth: true,
-        
-        appendArrows: false,
         swipeToSlide: true,
-        
+        prevArrow: '<button type="button" class="slick-prev"><</button>',
+        nextArrow: '<button type="button" class="slick-next">></button>'
       
       });
   });
-
-
-
 
 
 

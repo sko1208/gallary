@@ -1,12 +1,17 @@
 .gallary {
+
     &__head {
         @include fz200;
         color: $main-color;
         margin-top: -200px;
     }
     &__slide-container {
+        width: 100%;
+        max-width: 1920px;
         margin-top: 51px;
         position: relative;
+        margin: 0 auto;
+       
     }
     &__card {
         margin-left: 30px;
@@ -23,6 +28,7 @@
     }
     .card_1 {
         width: 327px;
+        
     }
     .card_2,
     .card_4 {
@@ -31,9 +37,14 @@
     .card_3
      {
         width: 586px;
+        
     }
     .card_5 {
         width: 320px;
+        
+    }
+    &__card-wrapper div:nth-child(even) {
+        margin-top: 40px;
     }
     &__card-content {
         display: flex;
@@ -106,7 +117,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 105.5%;
+        top: 104.8%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -141,6 +152,26 @@
             width: 4px;
             height: 4px;
         }
+    }
+    .slick-prev {
+        position: absolute;
+        border: none; 
+        outline: none;
+        background-color: $white-color;
+        left: 47.5%;
+        transform: translateX(-50%);
+        top: 104%;
+        color: #4137D0;
+    }
+    .slick-next {
+        position: absolute;
+        border: none; 
+        outline: none;
+        background-color: $white-color;
+        right: 47%;
+        transform: translateX(-50%);
+        top: 104%;
+        color: #4137D0;
     }
     
     
