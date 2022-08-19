@@ -3,46 +3,6 @@
         &__head {
             font-size: 150px;
         }
-        .slick-prev  {
-            left: 47%;
-        }
-        .slick-next {
-            left: 52.8%;
-        }
-    }
-   
-}
-@media (max-width: 1475px) {
-    .gallary {
-        .slick-prev  {
-            left: 46.5%;
-        }
-        .slick-next {
-            left: 53.1%;
-        }
-    }
-   
-}
-@media (max-width: 1200px) {
-    .gallary {
-        &__head {
-            font-size: 130px;
-        }
-        .slick-prev  {
-            left: 45.5%;
-        }
-        .slick-next {
-            left: 54.1%;
-        }
-    }
-}
-@media (max-width: 992px) {
-    .gallary {
-        &__head {
-            margin-top: -100px;
-            font-size: 85px;
-            line-height: 85px;
-        }
         &__image-content {
             height: 388px;
             width: 389px;
@@ -54,8 +14,28 @@
         .card_5 {
             width: 389px;
         }
-        &__card-wrapper div:nth-child(even) {
-            margin-top: 20px;
+    }
+   
+}
+@media (max-width: 1200px) {
+    .gallary {
+        &__head {
+            font-size: 130px;
+        }
+        &__card-wrapper .gallary__card:nth-child(even) {
+            margin-top: 0;
+        }
+        &__card-wrapper .gallary__card:nth-child(odd) {
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .gallary {
+        &__head {
+            margin-top: -100px;
+            font-size: 85px;
+            line-height: 85px;
         }
         &__button {
             display: none;
@@ -63,46 +43,16 @@
         &__dots-wrapper {
             margin-top: 17px;
         }
-        .slick-prev  {
-            left: 44.5%;
-            top: 104.4%;
-        }
-        .slick-next {
-            left: 55.1%;
-            top: 104.4%;
-        }
-        .slick-dots {
-            top: 105.5%;
-        }
     }
 }
-@media (max-width: 870px) {
-    .gallary {
-        .slick-prev  {
-            left: 44.5%;
-        }
-        .slick-next {
-            left: 55.1%;
-        }
-    }
-}
-@media (max-width: 768px) {
-    .gallary {
-        .slick-prev  {
-            left: 43.5%;
-        }
-        .slick-next {
-            left: 56.1%;
-        }
-    }
-}
-
 @media (max-width: 576px) {
    .gallary {
+    margin-top: 20px;
         &__head {
-            margin-top: -85px;
+            margin-top: 0;
             margin-left: 19px;
             font-size: 60px;
+            line-height: 60px;
         }
         &__image-content {
             height: 202px;
@@ -122,56 +72,24 @@
                 margin-top: 5px;
             }
         }
-        .slick-dots {
-            top: 104.8%;
-        }
-        .slick-prev  {
-            top: 102.8%;
-            left: 40.5%;
-        }
-        .slick-next {
-            top: 102.8%;
-            left: 58.1%;
-        }
         &__card-wrapper div:nth-child(even) {
             margin-top: 0;
         }
-        &__card-wrapper div:nth-child(odd) {
-            margin-top: 10px;
+        &__card-wrapper .gallary__card:nth-child(odd) {
+            margin-top: 20px;
         }
         &__slide-container {
-            margin-top: -25px;
+            margin-top: 20px;
         }
         &__dots-wrapper {
             margin-top: 0;
         }
         &__divider {
-            margin-top: -10px;
+            margin-top: 5px;
             height: 15px;
         }
         &__card {
-            margin-left: 26px;
+            margin-left: 20px;
         }
     }
-    @media (max-width: 460px) {
-       .gallary {
-        .slick-prev  {
-            left: 39.5%;
-        }
-        .slick-next {
-            left: 59.1%;
-        }
-       }
-    }
-    @media (max-width: 400px) {
-        .gallary {
-         .slick-prev  {
-             left: 36.5%;
-         }
-         .slick-next {
-             left: 62.1%;
-         }
-        }
-     }
-    
 }

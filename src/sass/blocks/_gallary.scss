@@ -10,6 +10,7 @@
         margin-top: 51px;
         position: relative;
         margin: 0 auto;
+        margin-top: 40px;
        
     }
     &__card {
@@ -42,7 +43,7 @@
         width: 320px;
         
     }
-    &__card-wrapper div:nth-child(even) {
+    &__card-wrapper .gallary__card:nth-child(even) {
         margin-top: 40px;
     }
     &__card-content {
@@ -116,13 +117,12 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 104.8%;
+        top: 104.9%;
         display: flex;
         justify-content: center;
         align-items: center;
         border: none;
         text-indent: -9999px;
-       
         li {
             background-color:#535353;;
             width: 4px;
@@ -150,6 +150,7 @@
             background-color:#4137D0;
             width: 4px;
             height: 4px;
+            border-radius: 50%;
         }
     }
     .slick-prev {
@@ -159,7 +160,7 @@
         background-color: $white-color;
         left: 47.5%;
         transform: translateX(-50%);
-        top: 104%;
+        top: 104.1%;
         color: #4137D0;
     }
     .slick-next {
@@ -167,9 +168,9 @@
         border: none; 
         outline: none;
         background-color: $white-color;
-        right: 47%;
+        left: 52.6%;
         transform: translateX(-50%);
-        top: 104%;
+        top: 104.1%;
         color: #4137D0;
     }
 }

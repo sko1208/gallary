@@ -83,8 +83,9 @@ $(document).ready(function(){
         slidesToShow: 2,
         variableWidth: true,
         swipeToSlide: true,
-        prevArrow: '<button type="button" class="slick-prev"><</button>',
         nextArrow: '<button type="button" class="slick-next">></button>',
+        prevArrow: '<button type="button" class="slick-prev"><</button>',
+       
         // centerMode: true,
         // focusOnSelect: true,
         responsive: [

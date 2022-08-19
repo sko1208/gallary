@@ -1,4 +1,7 @@
 .banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 1920px;
     background: url('../img/banner.jpg') no-repeat 50%/cover;
     &__head {
         padding: 127px 0 0 31px;

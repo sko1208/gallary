@@ -6,6 +6,21 @@
             font-size: 150px;
             line-height: 130px;
         }
+        &__descr {
+                ul{
+                    padding-bottom: 270px;
+                }
+            }
+    
+    }
+}
+@media (max-width: 1475px)  {
+    .banner {
+        &__descr {
+            ul{
+                padding-bottom: 0;
+            }
+        }
     }
 }
 @media (max-width: 992px) {
@@ -17,11 +32,12 @@
             line-height: 100px;
         }
         &__descr {
+            padding-bottom: 270px;
             width: 50%;
             ul {
                 flex-wrap: wrap;
                 width: 100%;
-                padding-bottom: 300px;
+                padding-bottom: 50px;
           
                 li {
                     margin: 5px 0 5px 20px;
@@ -44,9 +60,7 @@
         }
         &__descr {
             ul {
-                li {
-                   
-                }
+                padding-bottom: 0;
             }
         }
     }
@@ -66,7 +80,7 @@
 
 @media (max-width: 576px)  {
     .banner {
-        background: url('../img/banner_360.jpg') no-repeat;
+        background: url('../img/banner_360.jpg') no-repeat 80%/cover;
         &__head {
             font-size: 60px;
             line-height: 65px;
@@ -77,6 +91,7 @@
             width: 70%;
             margin-left: 19px;
             ul{
+                padding-bottom: 207px;
                 li {
                     font-size: 14px;
                     line-height: 20px;
@@ -84,6 +99,24 @@
                     margin-bottom: 0;
                     
                 }
+            }
+        }
+    }
+}
+@media (max-width: 470px)  {
+    .banner {
+        &__descr {
+            ul{
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+@media (max-width: 400px)  {
+    .banner {
+        &__descr {
+            ul{
+                padding-bottom: 0;
             }
         }
     }
