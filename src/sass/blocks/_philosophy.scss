@@ -1,0 +1,62 @@
+.philosophy {
+    position: relative;
+    margin-top: 48px;
+    .container {
+        position: relative;
+    }
+    &__circle_bg {
+        position: absolute;
+        top: -170px;
+        right: 0;
+        width: 641px;
+        height: 641px;
+        border-radius: 50%;
+        background: url('../img/philosophy_3.jpg') no-repeat 50%/cover;
+        z-index: -1;
+    }
+    
+    &__head {
+        @include fz200;
+    }
+    p {
+        margin-top: 23px;
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 32px;
+        color: #7C6E6E;
+    }
+    p:nth-of-type(-n+3) {
+        width: 1281px;
+    }
+    h3 {
+        margin-top: 28px;
+        margin-bottom: 0;
+        font-size: 45px;
+        line-height: 35px;
+        color: $white-color;
+        -webkit-text-stroke: 1px  #292929;
+    }
+    h3:first-of-type {
+        margin-top: 113px;
+    }
+    h3:nth-of-type(3) {
+        margin-top: 215px;
+    }
+    &__circle {
+        width: 553px;
+        height: 553px;
+        border-radius: 50%;
+        border: 2px solid $main-color;
+        float: left;
+       
+    }
+    &__circle:first-of-type {
+        margin-top: 46px;
+        margin-right: 53px;
+    }
+    &__circle:nth-of-type(2) {
+        margin: 72px 193px 0 110px;
+        float: right;
+    }
+
+}
